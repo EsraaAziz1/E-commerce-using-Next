@@ -23,7 +23,7 @@ export default async function ProductList({ searchValue, categoryValue }: props)
     const categories = categoriesData.categories ?? []
 
     if (!products?.length) {
-        return <p className="text-gray-500">No Products found.</p>
+        return <p className="text-gray-400">No Products found.</p>
     }
 
     let filteredList = products
