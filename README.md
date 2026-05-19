@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-Commerce Full Stack Application
 
-## Getting Started
+A full-stack e-commerce web application developed using modern frontend and backend technologies. The project focuses on building a scalable online shopping platform with authentication, product management, shopping cart functionality, wishlist handling, and responsive user experience.
 
-First, run the development server:
+---
+
+## Project Overview
+
+The application allows users to:
+
+- Browse products by categories
+- View detailed product information
+- Add and remove items from the shopping cart
+- Manage wishlist items
+- Register and authenticate accounts
+- Manage user profile and order history
+- Experience responsive design across devices
+
+The project follows a component-based architecture and separates frontend and backend responsibilities for scalability and maintainability.
+
+---
+
+## Main Features
+
+### Authentication
+
+- User registration and login system
+- Secure authentication using NextAuth.js
+- Google authentication integration
+- Protected routes and middleware handling
+- Session management and authorization
+- Logout functionality
+
+---
+
+### Home Page
+
+- Dynamic product fetching
+- Featured products section
+- Product categories display
+- Responsive product cards
+- Add to cart functionality
+- State management using TanStack Query
+
+---
+
+### Product Listing Page
+
+- Display all available products
+- Product filtering and sorting
+- Category-based browsing
+- Pagination support
+- Dynamic rendering using server components
+- Wishlist functionality
+
+---
+
+### Product Details Page
+
+- Detailed product information
+- Product image previews
+- Quantity selector
+- Add to cart functionality
+- Dynamic product state management
+- Optimized client-side interactions
+
+---
+
+### Shopping Cart
+
+- Add and remove products
+- Quantity updates
+- Cart total calculations
+- Shipping calculations
+- Persistent cart management
+- Real-time cart updates
+
+---
+
+### User Profile
+
+- User information management
+- Profile editing
+- Order history display
+- Account management system
+- Protected profile routes
+
+---
+
+## Technologies Used
+
+### Frontend
+
+- Next.js
+- React.js
+- TypeScript
+- Tailwind CSS
+- TanStack Query
+
+### Backend
+
+- Node.js
+- Express.js
+
+### Database
+
+- MongoDB
+
+### Authentication
+
+- NextAuth.js
+
+### Deployment
+
+- Deno Deploy
+
+---
+
+## Project Architecture
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+src/
+├── app/
+├── components/
+├── services/
+├── lib/
+├─
