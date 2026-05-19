@@ -4,8 +4,7 @@ import { usePathname } from 'next/navigation';
 
 const pages = [
     { path: '/', name: 'Home' },
-    { path: '/products', name: 'Products' },
-    { path: '/categories', name: 'Categories' },
+    { path: '/products', name: 'Products' }
 ];
 export default function NavLinks() {
     const pathName = usePathname();

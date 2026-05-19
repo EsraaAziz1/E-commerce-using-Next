@@ -1,22 +1,22 @@
-import SignInForm from "@/components/signInForm";
-import SocialProviders from "@/components/SocialProviders";
+import SignUpForm from "../../components/signupform";
+import SocialProviders from "../../components/SocialProviders";
 
-export default function SignInPage() {
+export default function SignUpPage() {
   return (
     <div className="flex items-center justify-center bg-gray-50 dark:bg-gray-900 py-10">
       <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg w-full max-w-md">
         <h1 className="text-2xl font-bold text-center text-gray-800 dark:text-white mb-2">
-          Welcome Back 👋
+          Create Account 🎉
         </h1>
-        <p className="text-center text-gray-500 mb-6">Sign in to continue</p>
+        <p className="text-center text-gray-500 mb-6">Sign up to get started</p>
 
         {/* Client: Form */}
-        <SignInForm />
+        <SignUpForm />
 
         {/* Divider */}
         <div className="flex items-center gap-3 my-6">
           <hr className="flex-1 border-gray-200" />
-          <span className="text-gray-400 text-sm">or continue with</span>
+          <span className="text-gray-400 text-sm">or sign up with</span>
           <hr className="flex-1 border-gray-200" />
         </div>
 
@@ -24,9 +24,9 @@ export default function SignInPage() {
         <SocialProviders />
 
         <p className="text-center text-sm text-gray-500 mt-6">
-          Don't have an account?{" "}
-          <a href="/signup" className="text-blue-600 hover:underline font-medium">
-            Sign Up
+          Already have an account?{" "}
+          <a href="/signin" className="text-blue-600 hover:underline font-medium">
+            Sign In
           </a>
         </p>
       </div>
